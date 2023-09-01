@@ -76,7 +76,6 @@ function MovieModal({ movieId, onClose }) {
                     <div className="movie-info">
                         <h2>{movie?.title}</h2>
                         <p>{movie?.overview}</p>
-                        {/* Add more movie details here */}
                     </div>
                 </div>
                 <div className="actors">
@@ -90,7 +89,6 @@ function MovieModal({ movieId, onClose }) {
                         ))}
                     </div>
                 </div>
-                {/* Add other sections like movie trailer and similar movies */}
             </div>
         </div>
     );

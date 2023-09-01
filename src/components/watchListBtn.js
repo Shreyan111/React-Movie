@@ -29,6 +29,8 @@ function WatchListBtn({ watchList, setWatchList, movie }) {
     if (!exist) {
       setWatchList([...watchList, { movie }]);
     }
+
+    alert("Added to the borrowers list in top in Navbar!!");
   }
 
   return (

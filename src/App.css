@@ -51,6 +51,12 @@ li.slick-active .custom-dot,
   cursor: pointer;
 }
 
+.watch_buttons_search{
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 .paginate-container {
   color: white;
   background-color: #29323c;
@@ -524,7 +530,7 @@ li.slick-active .custom-dot,
 }
 
 .catalogue .search .search-bar .search-list .search-item .search-detail .title {
-  font-size: 16px;
+  font-size: 14px;
   color: white;
   font-weight: bold;
 }
@@ -718,6 +724,10 @@ li.slick-active .custom-dot,
   color: #333;
 }
 
+.fas{
+  cursor: pointer;
+}
+
 /* Movie Content Layout (Left Image, Right Info) */
 .movie-content {
   display: flex;
@@ -734,6 +744,7 @@ li.slick-active .custom-dot,
 
 .movie-info {
   flex: 1;
+  color: black;
   /* Take remaining space */
 }
 
@@ -761,12 +772,6 @@ li.slick-active .custom-dot,
   /* Adjust actor image size as needed */
   height: auto;
 }
-
-/* Add more styles for other sections as needed */
-
-
-
-
 
 /*movie detail*/
 .loader {

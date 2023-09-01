@@ -1,11 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import API_KEY from '../config';
+import MovieModal from './MovieModal';
 
 function Form({ setYear, setCategory, setSelectedGenre }) {
     const [movieSearch, setMovieSearch] = useState([]);
     const [query, setQuery] = useState("");
     const [yearArray, setYearArray] = useState([]);
     const [genres, setGenres] = useState([]);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedMovie, setSelectedMovie] = useState(null);
+
+    function openMovieModal(movie) {
+        setSelectedMovie(movie);
+        setIsModalOpen(true);
+    }
 
     useEffect(() => {
         addYears();
@@ -61,10 +69,19 @@ function Form({ setYear, setCategory, setSelectedGenre }) {
                             <img src={`http://image.tmdb.org/t/p/w200/${movie?.poster_path}`} alt={movie?.title} />
                             <div className="search-detail">
                                 <p className="title">{movie?.title}</p>
-                                <p className="overview">{movie?.overview?.substring(0, 100)}</p>
+                                <button className='watch_buttons_search' onClick={() => openMovieModal(movie)}>Watch now</button>
                             </div>
                         </div>
                     ))}
+                    {isModalOpen && selectedMovie && (
+                        <MovieModal
+                            movieId={selectedMovie?.id}
+                            onClose={() => {
+                                setSelectedMovie(null);
+                                setIsModalOpen(false);
+                            }}
+                        />
+                    )}
                 </div>
             </div>
 
