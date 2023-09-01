@@ -86,7 +86,7 @@ function MovieCover({ watchList, setWatchList }) {
                       <div>
                         <h3>{movie?.title}<span className="original-title">{movie?.title !== movie?.original_title ? `( ${movie?.original_title} )` : ""}</span></h3>
                         <p className="release_date">{movie?.release_date}</p>
-                        <button onClick={() => openMovieModal(movie)}>Watch now</button>
+                        <button className='watch_buttons_cover' onClick={() => openMovieModal(movie)}>Watch now</button>
                         <p className="overview">{movie?.overview}</p>
                       </div>
                     </div>

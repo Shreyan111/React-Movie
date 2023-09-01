@@ -21,7 +21,7 @@ function Nav({ watchList, setWatchList }) {
                     <li className="watch-list">
                         <i onClick={toggleHeight} className="fas fa-tv"></i>
                         {watchList?.length === 0 ?
-                            <span className='nolength'>No Bookmarks</span> : <span className="watch-list-length">{watchList?.length}</span>
+                            <span className='nolength'>No Borrowers</span> : <span className="watch-list-length">{watchList?.length}</span>
                         }
                         <WatchListItem watchList={watchList} setWatchList={setWatchList} height={height} />
                     </li>

@@ -35,9 +35,8 @@ function MovieSlider({ movies, title }) {
                                 </div>
                                 <div className="item-desc">
                                     <h5>{movie?.title}</h5>
-                                    <p>{movie?.overview}</p>
                                 </div>
-                                <button onClick={() => openMovieModal(movie)}>Watch now</button>
+                                <button className='watch_buttons_slider' onClick={() => openMovieModal(movie)}>Watch now</button>
                             </div>
                         </div>
                     ))

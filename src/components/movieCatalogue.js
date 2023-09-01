@@ -66,8 +66,7 @@ function MovieCatalogue({ watchList, setWatchList }) {
                         <img src={`http://image.tmdb.org/t/p/w200/${movie?.poster_path}`} alt={movie?.title} />
                         <div className="catalogue-item-detail">
                             <span className="title">{movie?.title}</span>
-                            <span className="overview">{movie?.overview.substring(0, 100)}</span>
-                            <button onClick={() => openMovieModal(movie)}>Watch now</button>
+                            <button className='watch_buttons' onClick={() => openMovieModal(movie)}>Watch now</button>
                         </div>
                         <div className="heart">
                             <WatchListBtn watchList={watchList} setWatchList={setWatchList} movie={movie} />

@@ -19,19 +19,36 @@ ul li {
 .custom-dot {
   margin-top: -30px;
   color: gray;
-  font-size: 5px;
+  font-size: 14px;
   transition: .3s ease-in-out;
 }
 
 li.slick-active .custom-dot,
 .custom-dot:hover {
-  font-size: 8px;
+  font-size: 14px;
   color: white;
 }
 
 .cunstom-dot-active {
-  font-size: 10px;
+  font-size: 14px;
   color: white;
+}
+
+.watch_buttons{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.watch_buttons_cover{
+  font-size: 32px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.watch_buttons_slider{
+  font-size: 32px;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .paginate-container {
@@ -44,8 +61,7 @@ li.slick-active .custom-dot,
 .paginate-item {
   font-weight: lighter;
   color: #b5babe;
-  ;
-  font-size: 15px;
+  font-size: 16px;
   text-align: center;
   cursor: pointer;
   transition: .3s ease-in-out;
@@ -89,7 +105,7 @@ li.slick-active .custom-dot,
   height: 40px;
   margin-left: 20px;
   color: white;
-  font-size: 18px;
+  font-size: 22px;
   border-radius: 50%;
   border: none;
   outline: none;
@@ -105,7 +121,7 @@ li.slick-active .custom-dot,
   top: 13px;
   left: 10px;
   color: white;
-  font-size: 8px;
+  font-size: 10px;
   width: 20px;
   height: 20px;
   transition: .3s ease-in-out;
@@ -220,11 +236,11 @@ li.slick-active .custom-dot,
   color: #29323c;
   border-radius: 50%;
   margin-right: 30px;
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .nav .main-nav .watch-list .list .list-item .item-detail .item-text .info span {
-  font-size: 12px;
+  font-size: 16px;
   color: #485563;
 }
 
@@ -267,7 +283,8 @@ li.slick-active .custom-dot,
 }
 
 .main-nav .nav-logo {
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: bolder;
 }
 
 .main-nav .nav-logo span {
@@ -319,24 +336,20 @@ li.slick-active .custom-dot,
 }
 
 .slider-cover .slider-cover-detail .original-title {
-  font-size: 15px;
+  font-size: 20px;
   margin-left: 10px;
 }
 
 .slider-cover .slider-cover-detail .release_date {
-  width: 80px;
   margin-top: -10px;
-  font-size: 15px;
-  text-align: center;
-  background: linear-gradient(to right, #29323c 0%, #4855634c 100%);
+  font-size: 20px;
   color: white;
-  padding: 5px 20px;
-  border-radius: 20px;
+  padding: 5px 0px;
   text-align: left;
 }
 
 .slider-cover .slider-cover-detail .overview {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: lighter;
   padding-bottom: 40px;
 }
@@ -412,7 +425,7 @@ li.slick-active .custom-dot,
   left: -5px;
   text-align: center;
   line-height: 40px;
-  font-size: 12px;
+  font-size: 20px;
   box-shadow: 1px 1px 8px #bfbfc2;
   background-color: aliceblue;
   color: #29323c;
@@ -425,12 +438,7 @@ li.slick-active .custom-dot,
   text-align: left;
   font-weight: bold;
   padding: 0 10px;
-}
-
-.slider-item .item-detail .item-desc p {
-  text-align: center;
-  padding: 0 10px;
-  font-size: 12px;
+  font-size: 20px;
 }
 
 .slider-item:hover .item-detail {
@@ -476,8 +484,9 @@ li.slick-active .custom-dot,
   color: white;
   width: 30px;
   height: 30px;
+  margin-top: 8px;
   line-height: 30px;
-  font-size: 12px;
+  font-size: 16px;
   text-align: center;
   cursor: pointer;
 }
@@ -515,15 +524,15 @@ li.slick-active .custom-dot,
 }
 
 .catalogue .search .search-bar .search-list .search-item .search-detail .title {
-  font-size: 15px;
+  font-size: 16px;
   color: white;
   font-weight: bold;
 }
 
 .catalogue .search .search-bar .search-list .search-item .search-detail .overview {
-  font-size: 10px;
+  font-size: 12px;
   margin-top: -12px;
-  font-weight: lighter;
+  font-weight: bold;
 }
 
 .catalogue .search .search-select {
